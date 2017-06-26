@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄信息列表页面</title>
+</head>
+<body>
+
+{{ book.btitle}} <br/>
+英雄信息如下：<br/>
+
+<ul>
+    {% for hero in heros %}
+    <li>英雄名：{{hero.hname}}---英雄评论：{{hero.hcomment}}</li>
+    {% empty %}
+    <li>没有英雄信息</li>
+    {% endfor %}
+
+</ul>
+
+
+</body>
+</html>

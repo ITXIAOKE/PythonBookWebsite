@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书列表首页</title>
+</head>
+<body>
+图书信息如下：<br/>
+
+<ul>
+    {% for book in books %}
+    <li><a href="/{{ book.id }}/">{{ book.btitle}}</a></li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>
